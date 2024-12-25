@@ -60,4 +60,12 @@ SpinChain is a blockchain-based roulette game that combines the thrill of spinni
 
 ---
 
+## Screenshot
+
+<img width="1440" alt="Screenshot 2024-12-25 at 3 40 17 PM" src="https://github.com/user-attachments/assets/7187c92f-7428-4a3e-ac01-0e37b29e46d8" />
+<img width="1440" alt="Screenshot 2024-12-25 at 3 40 46 PM" src="https://github.com/user-attachments/assets/8aad3077-8290-4be6-ae67-bb3dede5728e" />
+
+
+
+
 Enjoy the excitement of spinning and winning with **SpinChain**! 🎉

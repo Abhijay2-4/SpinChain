@@ -1,0 +1,311 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('./assets/pexels-felixmittermeier-956999.jpg');
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background:none;
+  color: #fff;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: none;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background: #e68a00;
+}
+
+/* Section Styles */
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+  background-color: none;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-text .section-title {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.about-text .section-description {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-img {
+    margin-top: 2rem;
+  }
+}
+
+
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  background-color: none;
+}
+
+.feature-section-title{
+  color: white;
+  font-size: 50px;
+}
+
+.features-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+/* Game Container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Game Title */
+.game-title {
+  font-size: 3rem;
+  color: #ff5722;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Wheel Container */
+.wheel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Roulette Wheel */
+.game-wheel {
+  margin-bottom: 1rem;
+  transform: scale(1.2); /* Slightly enlarge the wheel */
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-wheel:hover {
+  transform: scale(1.3); /* Enlarge on hover */
+}
+
+/* Spin Button */
+.spin-button {
+  font-size: 1.5rem;
+  padding: 0.8rem 2.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(255, 87, 34, 0.4);
+}
+
+.spin-button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(45deg, #e64a19, #ff5722);
+}
+
+.spin-button:active {
+  transform: translateY(2px);
+}
+
+/* Winning Message */
+.win-message {
+  font-size: 2rem;
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Reward Button */
+.reward-button {
+  font-size: 1.3rem;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #ffc107, #ffeb3b);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.reward-button:disabled {
+  background: #d3d3d3;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+.reward-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  background: linear-gradient(45deg, #ffca28, #ffc107);
+}
+
+.reward-button:active:not(:disabled) {
+  transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-title {
+    font-size: 2.5rem;
+  }
+
+  .spin-button,
+  .reward-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .win-message {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
